@@ -1,0 +1,80 @@
+.skew {
+   transform: skewY(-6deg);
+   .feature-box {
+      background-color: rgba($black-color, .82);
+      padding: 2rem 1.2rem 1rem 1.2rem;
+      border-radius: .35rem;
+      font-size: 1.5rem;
+      color: $light-blue;
+      box-shadow: 0 1.4rem 4rem rgba($blue-color, .3);
+      transition: all .9s;
+
+      &:hover {
+         box-shadow: 0 0 7.2rem rgba($white-color, .29);
+         transform: scale(1)  translateY(10px) skewY(6deg);
+
+         .heading-tertiary {
+            text-align: center;
+            transform: rotateY(360deg);
+            transition: all .61s;
+            background-image: linear-gradient(to right, rgb(219, 246, 4), rgb(242, 23, 23));
+            -webkit-background-clip: text;
+            color: transparent;
+         }
+         .feature-box__icon {
+            font-size: 6rem;
+            display: block;
+            color: white;
+            text-align: center;
+            transition: all .4s;
+         }
+         .feature-box__text {
+            text-align: center;
+            transition: all .6s;
+
+            color: rgba($light-blue, .3);
+            font-size: 1.5rem;
+         }
+      }
+
+
+
+      &:active {
+         transition: all .1s;
+         box-shadow: 0 0 3rem rgba($white-color, .85);
+         background-color: rgba($black-color, .92);
+         padding: 2rem 1rem 3rem 1rem;
+         transform: scale(0.97);
+         .feature-box__text {
+            color: $white-color !important;
+         }
+
+      }
+
+
+
+      // position: absolute;
+      // top: 50%;
+      // width: 20%;
+      // transform: translateY(-50%);
+      &__icon {
+         font-size: 6rem;
+         display: block;
+         text-align: center;
+         color: grey;
+      }
+      &__text {
+         font-size: 1.2rem;
+         font-weight: normal;
+         margin-top: 1.5rem;
+         transition: all .1s;
+         &:hover {
+            font-size: 1.6rem;
+            color: $white-color !important;
+         }
+      }
+      .heading-tertiary {
+         text-align: center;
+      }
+   }
+}

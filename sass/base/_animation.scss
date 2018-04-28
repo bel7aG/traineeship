@@ -1,0 +1,85 @@
+@keyframes developer {
+   0% {
+      opacity: .08;
+      background-color: rgba(20, 255, 0, 0.22);
+      letter-spacing: -20.1rem;
+      color: $white-color;
+      transform: translate(-40rem, -32.6rem) rotate(3360deg);
+   }
+
+   15% {
+      opacity: .52;
+      color: green;
+      letter-spacing: 0;
+      transform: translate(-110rem, -40rem) rotate(3360deg);
+   }
+
+   22% {
+      letter-spacing: 2rem;
+      padding: 3rem;
+   }
+
+   35% {
+      background-color: rgba($black-color, .02);
+      color: $white-color;
+      opacity: 1;
+      text-shadow: 0.2rem 0.2rem 2.6rem blue;
+      letter-spacing: 6.8rem;
+      text-indent: 2rem;
+      transform: translateY(0) rotate(3330);
+   }
+
+   45% {
+      transform: rotate(-15deg);
+   }
+
+   50% {
+      letter-spacing: .3rem;
+      color: rgba($white-color, 0.13);
+      text-shadow: .2rem .2rem 3.6rem $white-color;
+   }
+   70% {
+      transform: translateY(1.8rem) rotate(0deg);
+      opacity: 1;
+      background-color: rgba($black-color, 0.18);
+      letter-spacing: 1rem;
+      text-shadow: .2rem .2rem 1.7rem red;
+      color: $white-color;
+   }
+
+   78% {
+      letter-spacing: -1.3rem;
+      color: red;
+   }
+
+   100% {
+      opacity: 0.01;
+      letter-spacing: -2rem;
+      color: brown;
+      background-color: rgba(236, 249, 0, 0.12);
+      transform: translate(40rem, -12.6rem) rotate(5360deg);
+
+   }
+}
+
+
+@keyframes myLogo {
+   23% {opacity: .4; transform: rotate(45deg);}
+   56% {opacity: .6; transform: rotate(-45deg);}
+   70%{opacity: 1;transform: rotate(0deg);}
+   85%{opacity: .4;transform: rotateX(36deg);}
+  100%{opacity: 1;transform: rotateX(0deg);}
+}
+
+
+@keyframes heading-primary-main {
+   0% {opacity: .3; transform: translateX(-50%) rotateX(120deg); color: rgba($black-color, 0.11)}
+   80% {opacity: .89; color: rgba($black-color, 0.11);}
+   100% {opacity: 1; color: rgba($white-color, 0.82);}
+}
+
+@keyframes heading-primary-sub {
+   0% {opacity: 1; color: rgba($white-color, 0.21);transform: translateX(70%);}
+   80% {opacity: 1; color: rgba($white-color, 0.12);}
+   100% {opacity: 1; color: rgba($white-color, 0.69);}
+}

@@ -1,0 +1,22 @@
+@font-face {
+   font-family: cubano;
+   src: url(../fonts/cubano.ttf)
+}
+
+
+* {
+   margin: 0;
+   padding: 0;
+   cursor: default;
+   box-sizing: border-box;
+}
+
+html {
+   //this define what 1 rem is
+   font-size: 62.5%; // ==> == font-size: 10px;
+}
+
+body {
+   font-size: 1.7rem;
+   overflow-x: hidden;
+}

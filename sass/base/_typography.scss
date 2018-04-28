@@ -1,0 +1,148 @@
+body {
+   background-color: $white-color;
+   font-weight: normal;
+   line-height: 1.9;
+   font-family: cubano;
+}
+
+header {
+   background-image: radial-gradient(rgba($purple-color, 0.33), rgba($black-color, 0.74)), url("../IMG/sec2.jpg");
+   background-attachment: fixed;
+   height: 100vh;
+   position: relative;
+   background-position: center;
+   background-size: cover;
+   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 93vh, 50% 103vh, 0% 93vh);
+   clip-path: polygon(0 0, 100% 0%, 100% 93vh, 50% 103vh, 0% 93vh);
+   backface-visibility: hidden;
+   .heading {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      transition: letter-spacing 12s;
+
+      &-primary {
+         color: $white-color;
+         backface-visibility: hidden;
+         margin-bottom: 4rem;
+      }
+
+      &-primary-main {
+         backface-visibility: hidden;
+         display: block;
+         letter-spacing: 1.6rem;
+         font-weight: normal;
+         font-size: 4rem;
+         color: rgba($light-color, 0.77);
+         animation-name: heading-primary-main;
+         animation-duration: 0.9s;
+         animation-timing-function: ease-in;
+         transition: 0.36s;
+         padding: 0;
+      }
+
+      &-primary-main:hover {
+         text-shadow: 0.1rem 0.1rem 1.12rem $black-color;
+      }
+
+      &-primary-sub {
+         display: block;
+         letter-spacing: 100px;
+         font-size: 1.9rem;
+         color: rgba($white-color, 0.99);
+         animation-name: heading-primary-sub;
+         animation-duration: 1s;
+         animation-fill-mode: forwards;
+         transition: all 2.6s ease-out;
+
+      }
+
+      &-primary-sub:hover {
+         letter-spacing: 4px;
+         backface-visibility: hidden;
+         visibility: visible;
+         display: block;
+         font-size: 2.65rem;
+         color: white !important;
+         opacity: 1;
+         overflow: hidden;
+         transition: all 1s ease;
+
+      }
+
+   }
+
+   & > .logo-box {
+      position: fixed;
+      top: 30px;
+      left: 30px;
+
+      & > #myLogo {
+         height: 9rem;
+         animation-name: myLogo;
+         animation-duration: 6s;
+         animation-iteration-count: infinite;
+         animation-timing-function: ease-in;
+         transform: rotate(0deg);
+         opacity: 1;
+      }
+   }
+}
+//main
+.heading-secondary{
+   font-size: 3rem;
+   display: inline-flex;
+   background-image: linear-gradient(to right, $primary-color, $dark-primary-color);
+   -webkit-background-clip: text;
+   color: transparent;
+   letter-spacing: 0.2rem;
+   transition: all 0.3s;
+
+   &:hover {
+      letter-spacing: 0.6rem;
+      font-size: 3.3rem;
+      transform: skewY(3.6deg) skewX(-19deg);
+      text-shadow: 0.4rem 1rem 2rem rgba($black-color, .39);
+   }
+}
+
+.heading-tertiary {
+   color: $light-red;
+   font-size: 2rem;
+   font-weight: 700;
+   letter-spacing: 0.4rem;
+   transition: all 0.3s;
+
+   &:hover {
+      text-shadow: 0.4rem 1rem 1.4rem rgba($black-color, .29);
+   }
+}
+
+.paragraph, #merciMessage  {
+   color: $grey-color;
+   font-size: $default-font-size;
+   font-weight: 500;
+   transition: all 0.2s;
+
+   &:not(:last-child) {
+      margin-bottom: 3rem;
+   }
+
+   &:hover {
+      color: $black-color;
+      padding: 1.4rem;
+      font-family: Arial, Helvetica sans-serif;
+      line-height: 1.9;
+      font-size: 1.9rem;
+
+      transform: skewX(-4deg);
+      transition: all 0.2s;
+   }
+
+   &:active {
+      transition: all 0.1s;
+      padding: 1rem;
+   }
+}
