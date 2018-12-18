@@ -4,7 +4,9 @@
   "description": "CodeMy[i] ",
   "main": "index.js",
   "scripts": {
-      "compile:sass": "node-sass sass/main.scss css/main.css -w"   
+    "compile:sass": "node-sass sass/main.scss css/main.css -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
